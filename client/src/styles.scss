@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  padding: 16px 0px;
+}
+
+.cd-md-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(9, 30, 66, 0.54);
+  background-color: rgba(0, 0, 0, 0.7);
+  .cd-md-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .cd-md-back-btn {
+    position: relative;
+    left: 10px;
+  }
+
+  &.confirm-modal {
+    .ReactModal__Content {
+      height: 160px;
+    }
+  }
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  .search-book{
+    display: flex;
+    margin: 20px 0px;
+    input{
+      font-size: 16px;
+      padding: 8px 16px;
+      width: 90%;
+    }
+    button{
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  .book-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .book-container {
+      position: relative;
+      width: 200px;
+      background: white;
+      border: 1px solid;
+      height: 300px;
+      padding: 20px;
+      border-radius: 0px 6px 6px 0px;
+      box-shadow: 11px 6px #d8d8d8;
+      margin: 20px 20px 60px 20px;
+      .book-name {
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+      .book-desc {
+        margin: 0px;
+        font-size: 18px;
+      }
+      .book-author {
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 500;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-style: italic;
+      }
+      .book-info {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        position: absolute;
+        bottom: -50px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.add-book-container{
+  padding: 20px;
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    .form-control{
+      width: 100%;
+      padding-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      label{
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
+      }
+      input{
+        font-size: 16px;
+        padding: 8px 16px;
+        width: 100%;
+      }
+    }
+  }
+}
